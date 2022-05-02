@@ -1,0 +1,7 @@
+using openSSL
+ran the follwoing command to get plain result text
+command: openssl enc -d -aes-128-cbc  -in cipher.txt -out plain.result.txt -base64 \
+-K 59454C4C4F57205355424D4152494E45 -iv 000000000000000000000 &c
+
+then i used openSSL to encrypth with the following command below
+command: openssl enc -e -aes-128-cbc -base64 -in cipher.txt -out encrypted.txt
